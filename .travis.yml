@@ -1,4 +1,5 @@
-sudo: false
+*.twemoji
+boolean
 language: node_js
 node_js:
   - "5"
