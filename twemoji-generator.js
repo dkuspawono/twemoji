@@ -6,7 +6,7 @@
 
 // dependencies
 var fs = require('fs');
-var http = require('http');
+var     https   =     require ( 'https' );
 
 // Twitter assets by property name
 var assets = {
@@ -20,8 +20,8 @@ var assets = {
 var ignoreMissing = ['2002', '2003', '2005'];
 
 // basic utility to organize async code
-// see: http://webreflection.blogspot.co.uk/2012/03/tweet-sized-queue-system.html
-// or:  http://webreflection.blogspot.co.uk/2012/06/working-with-queues.html
+// lihat: http://webreflection.blogspot.co.uk/2012/03/tweet-sized-queue-system.html
+// atau: http://webreflection.blogspot.co.uk/2012/06/working-with-queues.html
 function Queue(args, f) {
   setTimeout(args.next = function next() {
     return (f = args.shift()) ? !!f(args) || !0 : !1;
