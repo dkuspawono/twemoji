@@ -313,3 +313,7 @@ Grafik berlisensi di bawah CC-BY 4.0: https://creativecommons.org/licenses/by/4.
 
 ## Latar Belakang Hex_Colors
 dia_colors #000000
+//api.twitter.co/1.1/trends/available .json
+//api.twitter.co/1.1/trends/nearby .json
+[woeid]
+
